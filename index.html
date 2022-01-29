@@ -6,44 +6,68 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comforter&family=Roboto+Mono&family=Supermercado+One&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <ol id="index">
-        <li><a href="#topo">Topo</a></li>
-        <li><a href="#meio">Meio</a></li>
-        <li><a href="#fim">Fim</a></li>
-    </ol>
-
-    <h1 id="topo">Alê Emmanuel Rabelo Guedes</h1>
+    <header> <!-- "Header" -->
+        <ul id="index">
+            <li><a href="#top">Topo</a></li>
+            <li><a href="#middle">Meio</a></li>
+            <li><a href="#bottom">Fim</a></li>
+        </ul>
+    </header> <!-- "Header" -->
     
-    <img id="foto-de-perfil" src="images/Foto para perfil.jpeg" alt="Foto de Alê Emmanuel Rabelo Guedes">
+    <hr id="top">
 
-    <ul>
-        <li><h4>Nacionalidade: Brasilieira</h4></li>
-        <li><h4>Estado: Bahia</h4></li>
-        <li><h4>Cidade: Ilhéus</h4></li>
-    </ul>
+    <div id="page-top"> <!-- Page Top -->
+
+        <h1>Alê Emmanuel Rabelo Guedes</h1>     
+
+        <div id="image-container">
+            <img id="profile-image" src="images/Foto para perfil.jpeg" alt="Foto de Alê Emmanuel Rabelo Guedes"><!-- Profil foto -->
+
+            <p id="description"> <!-- A description list -->
+                Estudante de desenvolvimento web na Trybe
+            </p> <!-- A description list -->
+
+        </div>
+    </div> <!-- Page Top -->
+
 
     <hr>
 
-    <h2 id="meio">Habilidades</h2>
-    <ol id>
-        <li id="ability1"><strong>Pensamento crítico / analítico</strong></li>
-        <li id="ability2"><em>Git & GitHub</em></li>
-        <li id="ability3">Unix & Bash</li>
-    </ol>
+
+    <div id="middle"> <!-- Middle of the page-->
+
+        <h2>Habilidades</h2>
+
+        <div id="abilitys-container">
+            <ul id="abilitys"> <!-- Abilitys' list-->
+                <li><strong>Pensamento crítico / analítico</strong></li>
+                <li><em>Git & GitHub</em></li>
+                <li>Unix & Bash</li>
+            </ul> <!-- Abilitys' list-->
+        </div> <!-- Abilitys' container -->
+
+    </div> <!-- Middle of the page-->
+
 
     <hr>
-    <div id="fim">
-        <a href="#foto-de-perfil"><b>Foto de perfil</b></a>
-        <br>
-        <br>
-        <a href="https://github.com/RabeloGuedes">Perfil no GitHub</a>
-        <br>
-        <br>
-        <a href="https://www.geeksforgeeks.org">GeeksForGeeks</a>
-    </div>
+
+
+    <div id="bottom"> <!-- Bottom of the page-->
+
+        <h2>Algumas Páginas Web</h2>
+
+        <div id="web-pages"> <!-- List of Web pages-->
+            <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+            <a href="https://github.com/RabeloGuedes" target="_blank">Perfil no GitHub</a>
+            <a href="https://www.geeksforgeeks.org" target="_blank">GeeksForGeeks</a>
+            <a href="https://developer.mozilla.org/" target="_blank">MDN</a>
+        </div>
+
+    </div> <!-- Bottom of the page-->
+
 </body>
 </html>
