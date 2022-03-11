@@ -93,7 +93,7 @@ header {
 
 
 /* Page's middle's Settings - Begin */
-
+/* 
 #middle h2 {
     text-align: center;
     font-size: 85px;
@@ -132,13 +132,13 @@ header {
 #abilitys li:nth-of-type(3) {
     font-size: 33px;
     letter-spacing: 5px;
-}
+} */
 /* Page's middle's Settings - End */
 
 
 /* Page's bottom's Settings - Begin */
 
-#bottom {
+/* #bottom {
     text-align: center;
 }
 
@@ -167,6 +167,6 @@ header {
 #web-pages a:hover {
     background-color: #1f1f1b;
     color: #c2b2b2;
-}
+} */
 
 /* Page's bottom's Settings - End */
