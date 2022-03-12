@@ -2,3 +2,7 @@
 [submodule "assets/projects/color-guess"] 
   path = assets/projects/color-guess
   url = git:https://github.com/RabeloGuedes/color-guess
+
+[submodule "assets/projects/pixel-art"] 
+  path = assets/projects/pixel-art
+  url = git:https://github.com/RabeloGuedes/pixels-art
