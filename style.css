@@ -7,58 +7,129 @@
   text-decoration: none;
 }
 
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  --text-primary: #b6b6b6;
+  --text-secondary: #cacaca;
+  --bg-primary: #4e4e4e;
+  --bg-secondary: #141418;
+}
+
+
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(253, 253, 253);
+  border-radius: 10px;
+}
+
 body {
   background-color: #32322C;
   color: #eeeeee;
 }
-
-#page-top, #middle, #bottom {
-  padding: 0 3%;
-}
-
 /* General Settings - End */
 
+/* Nav's Settings - Begin */
 
-/* Header Settings - Begin */
-
-header {
-  background-color: #f3f3f3;
-  padding: 30px; 
+#navbar {
+  width: 5rem;
+  height: 100vh;
   position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  text-align: center;
+  background: var(--bg-primary);
+  transition: width 0.5s ease;
 }
 
-header ul {
+#navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
-#index li a {
-  text-decoration: none;
-  color: #1f1f1b;
-  font-family: 'Comforter';
-  font-size: 40px;
-  letter-spacing: 5px;
-  transition: color 1s;
-  transition: background-color 1s;
-  display: block;
-  padding: 5px 100px;
+.nav-item {
+  width: 100%;
+  transition: background-color 0.5s ease;
 }
 
-#index li a:hover {
-  color:#f3f3f3;
-  background-color: #1f1f1b;
-  border-radius: 3px;
+.nav-item:first-child {
+  background-color:rgb(47, 47, 47);
+  margin-bottom: 2.5rem;
 }
 
-/* Header Settings - End */
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+}
+
+.link-text {
+  color: #b6b6b600;
+  margin-left: 1rem;
+  font-size: 2rem;
+  transition: color 0.25s ease, transform 0.8s ease;
+  transform: translateY(-6rem);
+}
+
+.nav-item:last-child .link-text {
+  transform: translateX(-6rem);
+}
+
+.nav-link ion-icon {
+  font-size: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+  transition: color 0.5s ease;
+}
+
+#navbar:hover {
+  width: 18rem;
+}
+
+#navbar:hover .link-text {
+  color: #b6b6b6;
+  transform: translateY(0);
+}
+
+.nav-item:hover {
+  background-color: rgb(47, 47, 47);
+}
+
+.nav-item:hover .link-text {
+  color: #e0e0e0 !important;
+}
+
+.nav-item:hover ion-icon {
+  color: rgb(131, 93, 207);
+}
+
+.nav-item:first-child ion-icon {
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+#navbar:hover .nav-item:first-child ion-icon {
+  transform: rotate(540deg);
+}
+
+/* Nav's Settings - End */
 
 
 /* Page's top's Settings - Begin */
+
+main {
+  margin-left: 5rem;
+}
 
 
 #page-top h1 {
@@ -66,7 +137,6 @@ header ul {
   font-size: 80px;
   letter-spacing: 5px;
   text-align: center;
-  margin-top: 135px;
 }
 
 #image-container {
@@ -85,7 +155,7 @@ header ul {
 }
 
 #description {
-  font-family: 'Supermercado One';
+  font-family: 'Open Sans';
   font-size: 27px;
   font-style: italic;
   color: #f8f694;
@@ -97,9 +167,9 @@ header ul {
 /* Project's Settings - Begin */
 
 #projects {
-  font-size: 100px;
+  font-size: 6rem;
   text-align: center;
-  font-family: Supermercado One, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 5px;
 }
 
@@ -112,15 +182,16 @@ header ul {
 
 .single-project-container {
   text-align: center;
-  width: 25%;
+  width: 25rem;
   display: flex;
   margin-top: 50px;
 }
 
 .single-project-container h3 {
   font-size: 35px;
-  font-family: Supermercado One, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #e2e2e2;
+  transition: transform 0.5s ease;
 }
 
 .single-project-container a {
@@ -130,15 +201,20 @@ header ul {
   align-items: center;
 }
 
+.single-project-container a:hover h3, .single-project-container a:hover .project-img-container {
+  transform: translateY(-0.7rem);
+}
+
 .project-img-container {
   border: 7px solid black;
   border-radius: 5px;
-  width: 90%;
+  width: 25rem;
+  height: 250px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
   transition: transform 0.5s, box-shadow 0.5s;
 }
 
-.project-img-container:hover {
+.single-project-container a:hover .project-img-container {
   transform: translateY(-10px);
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.8);
 }
@@ -162,8 +238,8 @@ header ul {
 }
 
 #technologies-title {
-  font-size: 60px;
-  font-family: Supermercado One, sans-serif;
+  font-size: 6rem;
+  font-family: 'Open Sans', sans-serif;
   margin: 50px 0;
   color: rgb(36, 36, 36);
 }

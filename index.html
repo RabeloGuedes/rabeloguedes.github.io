@@ -6,17 +6,52 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comforter&family=Roboto+Mono&family=Supermercado+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono&family=Supermercado+One&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header> <!-- "Header" -->
-        <ul id="index">
-            <li><a href="#top">Projetos</a></li>
-            <li><a href="#middle">Tecnologias</a></li>
-            <li><a href="#bottom">Habilidades</a></li>
-        </ul>
-    </header> <!-- "Header" -->
+  <nav id="navbar">
+    <ul id="navbar-nav">
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+          <span class="link-text">Perfil</span>
+        </a>
+      </li>
+      
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <ion-icon name="bulb-outline"></ion-icon>
+          <span class="link-text">Projetos</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <ion-icon name="terminal-outline"></ion-icon>
+          <span class="link-text">Tecnologias</span>
+        </a>
+      </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <ion-icon name="construct-outline"></ion-icon>
+        <span class="link-text">Habilidades</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <ion-icon name="call-outline"></ion-icon>
+        <span class="link-text">Contato</span>
+      </a>
+    </li>
+
+  </ul>
+
+  </nav>
 
     <main>
       <section id="top-section"> <!-- Page Top -->
@@ -37,7 +72,7 @@
 
       <section id="projects-section"> <!-- A section to list projects -->
 
-        <h1 id="projects">Projects</h1>
+        <h1 id="projects">Projetos</h1>
         
 
         <div id="all-projects">
@@ -46,7 +81,7 @@
             <a href="#">
               <h3>Color Guess</h3>
               <div class="project-img-container">
-                <img class="project-img" src="/assets/images/color-guess.png" alt="">
+                <img class="project-img" src="/assets/images/color-guess.png" alt="Color Guess"/>
               </div>
             </a>
           </div>
@@ -55,7 +90,7 @@
             <a href="#">
               <h3>Pixels Art</h3>
               <div class="project-img-container">
-                <img class="project-img" src="/assets/images/pixels-art.png" alt="">
+                <img class="project-img" src="/assets/images/pixels-art.png" alt="Pixels Art">
               </div>
             </a>
           </div>
@@ -64,7 +99,7 @@
             <a href="#">
               <h3>To do list</h3>
               <div class="project-img-container">
-                <img class="project-img" src="/assets/images/to-do-list.png" alt="">
+                <img class="project-img" src="/assets/images/to-do-list.png" alt="To do list">
               </div>
             </a>
           </div>
@@ -73,7 +108,7 @@
             <a href="#">
               <h3>Trybewarts</h3>
               <div class="project-img-container">
-                <img class="project-img" src="/assets/images/trybewarts.png" alt="">
+                <img class="project-img" src="/assets/images/trybewarts.png" alt="Trybewarts">
               </div>
             </a>
           </div>
@@ -89,31 +124,31 @@
         <div id="all-technologies">
 
           <div class="technologies-img-container">
-            <img src="/assets/images/logos/html5.png" alt="">
+            <img src="/assets/images/logos/html5.png" alt="HTML5">
           </div>
 
           <div class="technologies-img-container">
-            <img src="/assets/images/logos/css3.png" alt="">
+            <img src="/assets/images/logos/css3.png" alt="CSS3">
           </div>
 
           <div class="technologies-img-container">
-            <img src="/assets/images/logos/javascript.png" alt="">
+            <img src="/assets/images/logos/javascript.png" alt="JavaScript">
           </div>
 
           <div class="technologies-img-container">
-            <img src="/assets/images/logos/bootstrap.png" alt="">
+            <img src="/assets/images/logos/bootstrap.png" alt="Bootstrap">
           </div>
 
           <div class="technologies-img-container">
-            <img src="/assets/images/logos/git.png" alt="">
+            <img src="/assets/images/logos/git.png" alt="Git">
           </div>
 
           <div class="technologies-img-container">
-            <img src="/assets/images/logos/github.png" alt="">
+            <img src="/assets/images/logos/github.png" alt="GitHub">
           </div>
 
           <div class="technologies-img-container">
-            <img src="/assets/images/logos/unix.png" alt="">
+            <img src="/assets/images/logos/unix.png" alt="Unix">
           </div>
         
         </div>
@@ -123,13 +158,7 @@
 
     </main>
 
-
-
-
-    
-
-
-  
-
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
