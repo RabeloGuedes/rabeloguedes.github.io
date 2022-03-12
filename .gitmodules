@@ -1,13 +1,13 @@
 
 [submodule "assets/projects/color-guess"] 
   path = assets/projects/color-guess
-  url = git:https://github.com/RabeloGuedes/color-guess
+  url = https://github.com/RabeloGuedes/color-guess
 
 [submodule "assets/projects/pixel-art"] 
   path = assets/projects/pixel-art
-  url = git:https://github.com/RabeloGuedes/pixels-art
+  url = https://github.com/RabeloGuedes/pixels-art
   
 [submodule "assets/projects/to-do-list"] 
   path = assets/projects/to-do-list
-  url = git:https://github.com/RabeloGuedes/to-do-list
+  url = https://github.com/RabeloGuedes/to-do-list
   
